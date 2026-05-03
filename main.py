@@ -1,5 +1,5 @@
 """
-Main entry point for RAG Application
+Main entry point for DocuQuery
 Can be used as CLI or to initialize the system programmatically.
 """
 
@@ -25,7 +25,7 @@ def setup_documents(documents_dir: str = "documents",
         chunk_overlap: Overlap between chunks
     """
     print("=" * 60)
-    print("RAG System Setup")
+    print("DocuQuery Setup")
     print("=" * 60)
     
     # Check if documents directory exists
@@ -47,8 +47,8 @@ def setup_documents(documents_dir: str = "documents",
     
     print(f"✅ Processed {len(chunks)} chunks from documents")
     
-    # Initialize RAG pipeline
-    print("\n2. Initializing RAG pipeline...")
+    # Initialize retrieval pipeline
+    print("\n2. Initializing retrieval pipeline...")
     pipeline = RAGPipeline()
     
     # Add documents to vector store
@@ -73,7 +73,7 @@ def query_cli(query: str,
              top_k: int = 5,
              llm_model: str = "llama3"):
     """
-    Query the RAG system from command line.
+    Query DocuQuery from command line.
     
     Args:
         query: User query
@@ -82,7 +82,7 @@ def query_cli(query: str,
         llm_model: Ollama model name
     """
     print("=" * 60)
-    print("RAG Query")
+    print("DocuQuery Query")
     print("=" * 60)
     
     # Load vector store
@@ -131,7 +131,7 @@ def query_cli(query: str,
 
 def main():
     """Main CLI entry point."""
-    parser = argparse.ArgumentParser(description="RAG Knowledge Assistant")
+    parser = argparse.ArgumentParser(description="DocuQuery")
     subparsers = parser.add_subparsers(dest='command', help='Commands')
     
     # Setup command
@@ -146,7 +146,7 @@ def main():
                              help='Chunk overlap in characters (default: 50)')
     
     # Query command
-    query_parser = subparsers.add_parser('query', help='Query the RAG system')
+    query_parser = subparsers.add_parser('query', help='Query DocuQuery')
     query_parser.add_argument('query', help='Query text')
     query_parser.add_argument('--vector-store-dir', default='vector_store',
                              help='Vector store directory (default: vector_store)')

@@ -1,5 +1,5 @@
 """
-RAG Pipeline Module
+DocuQuery Pipeline Module
 Implements the complete Retrieval-Augmented Generation pipeline.
 """
 

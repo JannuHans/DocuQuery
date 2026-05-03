@@ -1,4 +1,4 @@
-# 🚀 RAGnosis – Retrieval-Augmented Knowledge Assistant
+# 🚀 DocuQuery – Retrieval-Augmented Knowledge Assistant
 
 <p align="center">
   <b>Hallucination-Free Document Question Answering</b><br>
@@ -38,9 +38,9 @@
 
 ## 🧐 About
 
-**RAGnosis** is an end-to-end **Retrieval-Augmented Generation (RAG)** platform designed to answer user queries **strictly from a given set of documents**.
+**DocuQuery** is an end-to-end **Retrieval-Augmented Generation (RAG)** platform designed to answer user queries **strictly from a given set of documents**.
 
-Unlike traditional LLM chatbots that rely on pre-trained knowledge and may hallucinate, RAGnosis:
+Unlike traditional LLM chatbots that rely on pre-trained knowledge and may hallucinate, DocuQuery:
 - Retrieves **relevant document context**
 - Injects it into the LLM prompt
 - Generates **grounded, verifiable answers with source references**
@@ -81,7 +81,7 @@ The system is built entirely using **open-source models and frameworks**, making
 ## 🖼 Application Screenshots
 
 <p align="center">
-  <img src="screenshots/home.png" alt="RAGnosis Home Screen" width="85%"/>
+  <img src="screenshots/home.png" alt="DocuQuery Home Screen" width="85%"/>
 </p>
 
 <p align="center">
@@ -90,7 +90,7 @@ The system is built entirely using **open-source models and frameworks**, making
 
 
 <p align="center">
-  <img src="screenshots/answer.png" alt="RAGnosis Answer Screen" width="85%"/>
+  <img src="screenshots/answer.png" alt="DocuQuery Answer Screen" width="85%"/>
 </p>
 
 <p align="center">
@@ -103,8 +103,8 @@ The system is built entirely using **open-source models and frameworks**, making
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/Aayushhh07/RAGnosis.git
-cd RAGnosis
+git clone https://github.com/JannuHans/DocuQuery.git
+cd DocuQuery
 ```
 ### 2️⃣ Create Virtual Environment
 ```bash
@@ -183,7 +183,7 @@ flowchart TD
 ## 📂 Project Structure
 
 ```text
-RAG/
+DocuQuery/
 ├── app.py                 # Streamlit UI
 ├── rag_pipeline.py        # Core RAG pipeline
 ├── document_processor.py  # Document ingestion and chunking

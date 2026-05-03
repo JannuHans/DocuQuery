@@ -1,5 +1,5 @@
 """
-Streamlit UI for RAG Application
+Streamlit UI for DocuQuery
 Provides a user-friendly web interface for the Knowledge Assistant.
 """
 
@@ -18,7 +18,7 @@ TOP_K_DEFAULT = 5
 
 # Page configuration
 st.set_page_config(
-    page_title="RAG Knowledge Assistant",
+    page_title="DocuQuery",
     page_icon="📚",
     layout="wide"
 )
@@ -91,7 +91,7 @@ def load_documents():
     return True
 
 # Main UI
-st.title("RAG Knowledge Assistant")
+st.title("DocuQuery")
 st.markdown("**Answer questions based strictly on your provided documents**")
 
 
